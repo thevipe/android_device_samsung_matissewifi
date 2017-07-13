@@ -17,7 +17,7 @@ Device Tree For Samsung Galaxy Tab 4 10.1
 
 
 
-This branch is for building TWRP
+This branch is for building Lineage"OS
 
 TODO:
 =======
