@@ -4,7 +4,7 @@
 #
 # You need to DeOdex the APK if pulling an ODEXed version from stock
 #####################################################################
-app/TimeService.apk
+app/TimeService/TimeService.apk
 bin/btnvtool
 bin/ds_fmc_appd
 bin/hci_qcomm_init
