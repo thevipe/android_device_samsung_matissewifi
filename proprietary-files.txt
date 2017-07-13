@@ -56,7 +56,7 @@ lib/E08QL_libTsAf.so
 lib/E08QL_libTs_J_Accm.so
 lib/E08QL_libTs_J_Awb.so
 lib/libAfSingle.so
-lib/libarccamera.so
+lib/libarcsoft_selfie_camera_lite.so
 lib/libarcsoft_flawlessface.so
 lib/libarcsoft_panorama_burstcapture.so
 lib/libarcsoft_sensorndk.so
@@ -78,7 +78,6 @@ lib/libdashplayer.so
 lib/lib_DNSe_EP_ver215d.so
 lib/lib_DNSe_NRSS_ver225.so
 lib/libdrmdecrypt.so
-lib/libfactoryutil.so
 lib/libgps.utils.so
 lib/libloc_api_v02.so
 lib/libmmcamera_cac2_lib.so
@@ -346,4 +345,5 @@ vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so
 vendor/lib/hw/power.qcom.so
+vendor/lib/hw/lights.msm8226.so
 vendor/lib/mediadrm/libwvdrmengine.so
