@@ -33,9 +33,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 
 # Set those variables here to overwrite the inherited values.
+PRODUCT_DEVICE := matissewifi
+PRODUCT_NAME := full_matissewifi
 PRODUCT_BRAND := samsung
-PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SM-T530NU
+PRODUCT_MODEL := SM-T530
 PRODUCT_MANUFACTURER := samsung
 
 $(call inherit-product, device/samsung/matissewifi/matissewifi.mk)

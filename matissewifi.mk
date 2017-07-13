@@ -136,5 +136,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=160 \
     ro.carrier=wifi-only
 
-# Common msm8226
-$(call inherit-product, device/samsung/msm8226-common/msm8226.mk)
+# Common matisse
+$(call inherit-product, device/samsung/matisse-common/matisse.mk)
