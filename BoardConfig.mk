@@ -17,9 +17,7 @@
 
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/matissewifi/include
 
-TARGET_OTA_ASSERT_DEVICE := matissewifi,matissewifiue,matissewifixx
-
-DEVICE_PATH := device/samsung/matissewifi
+TARGET_OTA_ASSERT_DEVICE := matissewifi,matissewifixx
 
 # Architecture
 TARGET_CPU_VARIANT := cortex-a7

@@ -22,15 +22,8 @@
 #
 
 
-# Inherit common CM stuff
-$(call inherit-product, vendor/cm/config/common_full.mk)
-
-# Required CM packages
-PRODUCT_PACKAGES += \
-    LatinIME
-
-# Include CM LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := matissewifi
@@ -39,5 +32,5 @@ PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T530
 PRODUCT_MANUFACTURER := samsung
 
-$(call inherit-product, device/samsung/matissewifi/matissewifi.mk)
+$(call inherit-product, device/samsung/matissewifi/device.mk)
 $(call inherit-product-if-exists, vendor/samsung/matissewifi/matissewifi-vendor.mk)

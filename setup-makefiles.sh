@@ -1,9 +1,7 @@
 #!/bin/bash
 
-export DEVICE=matissewifi
-export DEVICES="matisse3g matisselte matissewifi"
-export DEVICE_COMMON=matisse-common
 export VENDOR=samsung
+export DEVICE=matissewifi
 
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk

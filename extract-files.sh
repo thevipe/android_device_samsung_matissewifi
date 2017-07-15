@@ -2,8 +2,6 @@
 
 set -e
 export DEVICE=matissewifi
-export DEVICES="matisse3g matisselte matissewifi"
-export DEVICE_COMMON=matisse-common
 export VENDOR=samsung
 
 if [ $# -eq 0 ]; then
