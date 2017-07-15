@@ -12,19 +12,15 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-# inherit from common matisse-common
--include device/samsung/matisse-common/BoardConfigCommon.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-TARGET_OTA_ASSERT_DEVICE := matissewifi,matissewifiue,matissewifixx
+# Get non-open-source specific aspects
+$(call inherit-product-if-exists, vendor/samsung/matissewifi/matissewifi-vendor.mk)
 
-DEVICE_PATH := device/samsung/matissewifi
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# Kernel
-TARGET_KERNEL_VARIANT_CONFIG := msm8226-sec_matissewifi_defconfig
-
-# Properties
-TARGET_SYSTEM_PROP= $(DEVICE_PATH)/system.prop
-
-# inherit from the proprietary version
--include vendor/samsung/matissewifi/BoardConfigVendor.mk
+# matisse-common
+$(call inherit-product, device/samsung/matisse-common/matisse.mk)
