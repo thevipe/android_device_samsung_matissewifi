@@ -27,8 +27,4 @@
     <!-- This device does not allow sms service. -->
     <bool name="config_sms_capable">false</bool>
 
-<<<<<<< HEAD
 </resources>
-=======
-</resources>
->>>>>>> 29be68918c16f589dcf832e2f8a1f895334dac2c
