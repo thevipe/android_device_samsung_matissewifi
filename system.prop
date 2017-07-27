@@ -1,5 +1,3 @@
-# display
-ro.sf.lcd_density=160
-
-# radio
+# Radio
 ro.radio.noril=1
+ro.carrier=wifi-only

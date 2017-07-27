@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,15 +15,21 @@
 # inherit from common matisse-common
 -include device/samsung/matisse-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := matissewifi,matissewifiue,matissewifixx
-
 DEVICE_PATH := device/samsung/matissewifi
 
+# Audio
+AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
+
 # Kernel
-TARGET_KERNEL_VARIANT_CONFIG := msm8226-sec_matissewifi_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_matissewifi_defconfig
+
+# Partitions
+TARGET_USERIMAGES_USE_F2FS := true
+TARGET_USERIMAGES_USE_EXT4 := true
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1866465280
 
 # Properties
-TARGET_SYSTEM_PROP= $(DEVICE_PATH)/system.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # inherit from the proprietary version
 -include vendor/samsung/matissewifi/BoardConfigVendor.mk

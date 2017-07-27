@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,5 +22,5 @@ $(call inherit-product-if-exists, vendor/samsung/matissewifi/matissewifi-vendor.
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# matisse-common
+# common matisse
 $(call inherit-product, device/samsung/matisse-common/matisse.mk)

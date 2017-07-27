@@ -1,4 +1,3 @@
-#
 # Copyright (C) 2014 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,10 +11,14 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-LOCAL_PATH := $(call my-dir)
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 
-ifeq ($(TARGET_DEVICE),matissewifi)
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
-endif
+# Inherit device configuration
+$(call inherit-product, device/samsung/matissewifi/full_matissewifi.mk)
+
+# Release name
+PRODUCT_RELEASE_NAME := SM-T530
+PRODUCT_DEVICE := matissewifi
+PRODUCT_NAME := cm_matissewifi

@@ -19,12 +19,10 @@
 
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds. -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- This device is not "voice capable"; it's data-only. -->
+  <bool name="config_voice_capable">false</bool>
 
-    <!-- This device is not "voice capable"; it's data-only. -->
-    <bool name="config_voice_capable">false</bool>
-
-    <!-- This device does not allow sms service. -->
-    <bool name="config_sms_capable">false</bool>
-
+  <!-- This device does not allow sms service. -->
+  <bool name="config_sms_capable">false</bool>
 </resources>
